@@ -1,5 +1,5 @@
-FROM node:lts-alpine
+FROM node:lts
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh autoconf automake build-base gcc libtool libpng-dev && \
+    apk add --no-cache bash git openssh && \
     npm install pnpm -g
 
